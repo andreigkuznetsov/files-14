@@ -23,7 +23,9 @@ public class TestData {
                 secondInvoiceAirportTo = "Шереметьево",
                 firstInvoiceCarrierTripDate = "2023-11-16T00:00:00",
                 secondInvoiceCarrierTripDate = "2023-11-17T00:00:00",
-                secondInvoiceScanTs = "2023-11-16T13:57:43";
+                secondInvoiceScanTs = "2023-11-16T13:57:43",
+                pdfDocumentText = "Pandect IS-471",
+                xlsCellValue = "0987654xdmd2w";
 
     public Long pdfFileCompressiveSize = 909814L,
                 pdfFileSize = 1026038L,
@@ -35,5 +37,12 @@ public class TestData {
     public Integer firstInvoiceScannedParcels = 0,
                 secondInvoiceScannedParcels = 0,
                 firstInvoiceTotalParcels = 3,
-                secondInvoiceTotalParcels = 4;
+                secondInvoiceTotalParcels = 4,
+                pdfDocumentPagesQty = 16,
+                xlsRowsQty = 6,
+                xlsSheetWithData = 0,
+                xlsRowWithData = 1,
+                xlsCellWithData = 0;
+
+    public String[] csvHeadersTitles = new String[]{"CODE", "NAME"};
 }

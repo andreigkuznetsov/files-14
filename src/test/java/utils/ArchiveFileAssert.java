@@ -6,11 +6,11 @@ import java.util.Objects;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-public class archiveFileAssert {
+public class ArchiveFileAssert {
 
     private final ClassLoader classLoader;
 
-    public archiveFileAssert(ClassLoader classLoader) {
+    public ArchiveFileAssert(ClassLoader classLoader) {
         this.classLoader = classLoader;
     }
 
