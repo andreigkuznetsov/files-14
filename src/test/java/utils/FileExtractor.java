@@ -27,6 +27,6 @@ public class FileExtractor {
                 }
             }
         }
-        throw new IllegalArgumentException("File " + fileName + " not found in the archive " + archiveName);
+        throw new IllegalArgumentException("Файл " + fileName + " не найден в архиве " + archiveName);
     }
 }
