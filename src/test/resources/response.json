@@ -1,0 +1,33 @@
+{
+  "resultType": "OK",
+  "message": null,
+  "operatorInfo": {
+    "operatorName": "Горшенин Максим Евгеньевич",
+    "operatorDepartmentCode": "SVO",
+    "tsdSerialNumber": "Mnbbvxx10"
+  },
+  "invoices": [
+    {
+      "id": "52822982779",
+      "invoiceNum": "kznsvo45",
+      "invoiceState": "open",
+      "cityFrom": "Казань",
+      "airportTo": "Шереметьево",
+      "carrierTripDate": "2023-11-16T00:00:00",
+      "scanTs": null,
+      "scannedParcels": 0,
+      "totalParcels": 3
+    },
+    {
+      "id": "52822887621",
+      "invoiceNum": "kznsvo723",
+      "invoiceState": "open",
+      "cityFrom": "Казань",
+      "airportTo": "Шереметьево",
+      "carrierTripDate": "2023-11-17T00:00:00",
+      "scanTs": "2023-11-16T13:57:43",
+      "scannedParcels": 0,
+      "totalParcels": 4
+    }
+  ]
+}
