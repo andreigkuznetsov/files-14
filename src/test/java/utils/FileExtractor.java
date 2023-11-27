@@ -8,7 +8,7 @@ import java.util.zip.ZipInputStream;
 
 public class FileExtractor {
 
-    public static byte[] extractFileFromZip(String archiveName, String fileName) throws IOException {
+    public byte[] extractFileFromZip(String archiveName, String fileName) throws IOException {
         try (InputStream inputStream = FileExtractor.class.getClassLoader().getResourceAsStream(archiveName)) {
             assert inputStream != null;
             try (ZipInputStream zipInputStream = new ZipInputStream(inputStream);

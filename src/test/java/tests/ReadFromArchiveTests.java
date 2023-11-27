@@ -10,11 +10,12 @@ public class ReadFromArchiveTests {
     private final PdfFileAssert pdfFileAssert = new PdfFileAssert();
     private final ExcelFileAssert excelFileAssert = new ExcelFileAssert();
     private final CsvFileAssert csvFileAssert = new CsvFileAssert();
+    private final FileExtractor fileExtractor = new FileExtractor();
     TestData testData = new TestData();
 
     @Test
-    void pdfFileInZipShouldHaveCorrectNameAndSizeTest() throws Exception {
-        byte[] pdfFileContent = FileExtractor.extractFileFromZip(testData.archiveName, testData.pdfFileTitle);
+    void pdfFileInZipShouldHaveCorrectDataTest() throws Exception {
+        byte[] pdfFileContent = fileExtractor.extractFileFromZip(testData.archiveName, testData.pdfFileTitle);
         archiveFileAssert.assertFileInZip(
                 testData.archiveName,
                 testData.pdfFileTitle,
@@ -25,8 +26,8 @@ public class ReadFromArchiveTests {
     }
 
     @Test
-    void xlsxFileInZipShouldHaveCorrectNameAndSizeTest() throws Exception {
-        byte[] xlsFileContent = FileExtractor.extractFileFromZip(testData.archiveName, testData.xlsxFileTitle);
+    void xlsxFileInZipShouldHaveCorrectDataTest() throws Exception {
+        byte[] xlsFileContent = fileExtractor.extractFileFromZip(testData.archiveName, testData.xlsxFileTitle);
         archiveFileAssert.assertFileInZip(
                 testData.archiveName,
                 testData.xlsxFileTitle,
@@ -38,8 +39,8 @@ public class ReadFromArchiveTests {
     }
 
     @Test
-    void scvFileInZipShouldHaveCorrectNameAndSizeTest() throws Exception {
-        byte[] csvFileContent = FileExtractor.extractFileFromZip(testData.archiveName, testData.scvFileTitle);
+    void scvFileInZipShouldHaveCorrectDataTest() throws Exception {
+        byte[] csvFileContent = fileExtractor.extractFileFromZip(testData.archiveName, testData.scvFileTitle);
         archiveFileAssert.assertFileInZip(
                 testData.archiveName,
                 testData.scvFileTitle,
